@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9216B5FC2611C46800A4356A /* XcodeKit.framework in Embeded Frameworks */ = {isa = PBXBuildFile; fileRef = 923458462611A7E9006F14EA /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		923458452611A7E9006F14EA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 923458442611A7E9006F14EA /* Cocoa.framework */; };
 		923458472611A7E9006F14EA /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 923458462611A7E9006F14EA /* XcodeKit.framework */; };
 		9234584A2611A7E9006F14EA /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923458492611A7E9006F14EA /* SourceEditorExtension.swift */; };
@@ -29,6 +30,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		9216B5FB2611C44800A4356A /* Embeded Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9216B5FC2611C46800A4356A /* XcodeKit.framework in Embeded Frameworks */,
+			);
+			name = "Embeded Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		923458522611A7E9006F14EA /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -149,6 +161,7 @@
 				9234583E2611A7E9006F14EA /* Sources */,
 				9234583F2611A7E9006F14EA /* Frameworks */,
 				923458402611A7E9006F14EA /* Resources */,
+				9216B5FB2611C44800A4356A /* Embeded Frameworks */,
 			);
 			buildRules = (
 			);

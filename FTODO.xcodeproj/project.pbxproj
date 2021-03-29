@@ -7,13 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		923458452611A7E9006F14EA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 923458442611A7E9006F14EA /* Cocoa.framework */; };
+		923458472611A7E9006F14EA /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 923458462611A7E9006F14EA /* XcodeKit.framework */; };
+		9234584A2611A7E9006F14EA /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923458492611A7E9006F14EA /* SourceEditorExtension.swift */; };
+		9234584C2611A7E9006F14EA /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9234584B2611A7E9006F14EA /* SourceEditorCommand.swift */; };
+		923458512611A7E9006F14EA /* FTodo.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 923458422611A7E9006F14EA /* FTodo.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9258B733260E2F2C0050E100 /* FTODOApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9258B732260E2F2C0050E100 /* FTODOApp.swift */; };
 		9258B735260E2F2C0050E100 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9258B734260E2F2C0050E100 /* ContentView.swift */; };
 		9258B737260E2F2D0050E100 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9258B736260E2F2D0050E100 /* Assets.xcassets */; };
 		9258B73A260E2F2D0050E100 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9258B739260E2F2D0050E100 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		9234584F2611A7E9006F14EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9258B727260E2F2C0050E100 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 923458412611A7E9006F14EA;
+			remoteInfo = FTodo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		923458522611A7E9006F14EA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				923458512611A7E9006F14EA /* FTodo.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		923458422611A7E9006F14EA /* FTodo.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FTodo.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		923458442611A7E9006F14EA /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		923458462611A7E9006F14EA /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
+		923458492611A7E9006F14EA /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		9234584B2611A7E9006F14EA /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
+		9234584D2611A7E9006F14EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9234584E2611A7E9006F14EA /* FTodo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FTodo.entitlements; sourceTree = "<group>"; };
 		9258B72F260E2F2C0050E100 /* FTODO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FTODO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9258B732260E2F2C0050E100 /* FTODOApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTODOApp.swift; sourceTree = "<group>"; };
 		9258B734260E2F2C0050E100 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -24,6 +60,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9234583F2611A7E9006F14EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				923458452611A7E9006F14EA /* Cocoa.framework in Frameworks */,
+				923458472611A7E9006F14EA /* XcodeKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9258B72C260E2F2C0050E100 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -34,10 +79,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		923458432611A7E9006F14EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				923458442611A7E9006F14EA /* Cocoa.framework */,
+				923458462611A7E9006F14EA /* XcodeKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		923458482611A7E9006F14EA /* FTodo */ = {
+			isa = PBXGroup;
+			children = (
+				923458492611A7E9006F14EA /* SourceEditorExtension.swift */,
+				9234584B2611A7E9006F14EA /* SourceEditorCommand.swift */,
+				9234584D2611A7E9006F14EA /* Info.plist */,
+				9234584E2611A7E9006F14EA /* FTodo.entitlements */,
+			);
+			path = FTodo;
+			sourceTree = "<group>";
+		};
 		9258B726260E2F2C0050E100 = {
 			isa = PBXGroup;
 			children = (
 				9258B731260E2F2C0050E100 /* FTODO */,
+				923458482611A7E9006F14EA /* FTodo */,
+				923458432611A7E9006F14EA /* Frameworks */,
 				9258B730260E2F2C0050E100 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				9258B72F260E2F2C0050E100 /* FTODO.app */,
+				923458422611A7E9006F14EA /* FTodo.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -74,6 +142,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		923458412611A7E9006F14EA /* FTodo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 923458552611A7E9006F14EA /* Build configuration list for PBXNativeTarget "FTodo" */;
+			buildPhases = (
+				9234583E2611A7E9006F14EA /* Sources */,
+				9234583F2611A7E9006F14EA /* Frameworks */,
+				923458402611A7E9006F14EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FTodo;
+			productName = FTodo;
+			productReference = 923458422611A7E9006F14EA /* FTodo.appex */;
+			productType = "com.apple.product-type.xcode-extension";
+		};
 		9258B72E260E2F2C0050E100 /* FTODO */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9258B73F260E2F2D0050E100 /* Build configuration list for PBXNativeTarget "FTODO" */;
@@ -81,10 +166,12 @@
 				9258B72B260E2F2C0050E100 /* Sources */,
 				9258B72C260E2F2C0050E100 /* Frameworks */,
 				9258B72D260E2F2C0050E100 /* Resources */,
+				923458522611A7E9006F14EA /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				923458502611A7E9006F14EA /* PBXTargetDependency */,
 			);
 			name = FTODO;
 			productName = FTODO;
@@ -100,6 +187,9 @@
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
+					923458412611A7E9006F14EA = {
+						CreatedOnToolsVersion = 12.4;
+					};
 					9258B72E260E2F2C0050E100 = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -119,11 +209,19 @@
 			projectRoot = "";
 			targets = (
 				9258B72E260E2F2C0050E100 /* FTODO */,
+				923458412611A7E9006F14EA /* FTodo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		923458402611A7E9006F14EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9258B72D260E2F2C0050E100 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -136,6 +234,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9234583E2611A7E9006F14EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9234584A2611A7E9006F14EA /* SourceEditorExtension.swift in Sources */,
+				9234584C2611A7E9006F14EA /* SourceEditorCommand.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9258B72B260E2F2C0050E100 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -147,7 +254,57 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		923458502611A7E9006F14EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 923458412611A7E9006F14EA /* FTodo */;
+			targetProxy = 9234584F2611A7E9006F14EA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		923458532611A7E9006F14EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = FTodo/FTodo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = U5M7X5V6ZG;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = FTodo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fabernovel.FTODO.FTodo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		923458542611A7E9006F14EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = FTodo/FTodo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = U5M7X5V6ZG;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = FTodo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fabernovel.FTODO.FTodo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		9258B73D260E2F2D0050E100 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -266,6 +423,7 @@
 		9258B740260E2F2D0050E100 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = FTODO/FTODO.entitlements;
@@ -290,6 +448,7 @@
 		9258B741260E2F2D0050E100 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = FTODO/FTODO.entitlements;
@@ -314,6 +473,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		923458552611A7E9006F14EA /* Build configuration list for PBXNativeTarget "FTodo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				923458532611A7E9006F14EA /* Debug */,
+				923458542611A7E9006F14EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9258B72A260E2F2C0050E100 /* Build configuration list for PBXProject "FTODO" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

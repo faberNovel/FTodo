@@ -1,0 +1,13 @@
+"application_title" = "FTodo";
+"application_description" = "FTodo is an extension for Apple's IDE, Xcode that generate and format you TODO commments. It will add valuable informations to these comments, your name and the curent date.";
+"installing_instructions_title" = "How to install it";
+"installing_instructions_steps" = "1. Open System Preferences\n2. Click on \"Extensions\"\n3. Select \"Xcode Source Editor\"\n4. Ensure the checkbox next to \"FTODO\" is checked\n5. Relaunch Xcode";
+"use_instructions_title" = "Using FTodo in Xcode";
+"use_instructions_detail" = "Open any Swift source code in Xcode — under the \"Editor\" menu, you will find \"FTodo\" which has the following options:";
+"todo_command_instruction_title" = "TODO:";
+"todo_command_description" = "Replace the current selection(s) with a TODO comment";
+"fixme_command_instruction_title" = "FIXME:";
+"fixme_command_description" = "Replace the current selection(s) with a FIXME comment";
+"comment_command_instruction_title" = "COMMENT:";
+"comment_command_description" = "Replace the current selection(s) with a \"COMMENT\" comment";
+"general_commands_detail" = "For each command the comment will be formatted as following : \"UserName YYYY/MM/dd CommandName\".";

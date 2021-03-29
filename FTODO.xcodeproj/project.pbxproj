@@ -17,6 +17,7 @@
 		9258B735260E2F2C0050E100 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9258B734260E2F2C0050E100 /* ContentView.swift */; };
 		9258B737260E2F2D0050E100 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9258B736260E2F2D0050E100 /* Assets.xcassets */; };
 		9258B73A260E2F2D0050E100 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9258B739260E2F2D0050E100 /* Preview Assets.xcassets */; };
+		92F4B38F2612144000B614BC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 92F4B3912612144000B614BC /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		9258B739260E2F2D0050E100 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9258B73B260E2F2D0050E100 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9258B73C260E2F2D0050E100 /* FTODO.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FTODO.entitlements; sourceTree = "<group>"; };
+		92F4B3902612144000B614BC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 			children = (
 				9258B732260E2F2C0050E100 /* FTODOApp.swift */,
 				9258B734260E2F2C0050E100 /* ContentView.swift */,
+				92F4B3912612144000B614BC /* Localizable.strings */,
 				9258B736260E2F2D0050E100 /* Assets.xcassets */,
 				9258B73B260E2F2D0050E100 /* Info.plist */,
 				9258B73C260E2F2D0050E100 /* FTODO.entitlements */,
@@ -239,6 +242,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92F4B38F2612144000B614BC /* Localizable.strings in Resources */,
 				9258B73A260E2F2D0050E100 /* Preview Assets.xcassets in Resources */,
 				9258B737260E2F2D0050E100 /* Assets.xcassets in Resources */,
 			);
@@ -274,6 +278,17 @@
 			targetProxy = 9234584F2611A7E9006F14EA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		92F4B3912612144000B614BC /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92F4B3902612144000B614BC /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		923458532611A7E9006F14EA /* Debug */ = {

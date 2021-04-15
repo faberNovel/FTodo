@@ -320,9 +320,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = FTodo/FTodo.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = U5M7X5V6ZG;
+				DEVELOPMENT_TEAM = LL36D6ZV57;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = FTodo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -330,8 +331,9 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.fabernovel.FTODO.FTodo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fabernovel.FTodo.xcodeExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = FTodo.extension.mac.appstore.denis.pp;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -484,10 +486,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = FTODO/FTODO.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"FTODO/Preview Content\"";
-				DEVELOPMENT_TEAM = U5M7X5V6ZG;
+				DEVELOPMENT_TEAM = LL36D6ZV57;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = FTODO/Info.plist;
@@ -496,8 +499,9 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.fabernovel.FTODO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fabernovel.FTodo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = FTodo.mac.appstore.denis.pp;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
